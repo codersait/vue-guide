@@ -4,10 +4,10 @@
 - When this data changes, the view will re-render. It should be noted that properties in data are only reactive if they existed when the instance was created.
 
 * Each Vue instance goes through a series of initialization steps when it’s created:
-  ** it needs to set up data observation,
-  ** compile the template,
-  ** mount the instance to the DOM
-  ** update the DOM when data changes.
+  - it needs to set up data observation,
+  - compile the template,
+  - mount the instance to the DOM
+  - update the DOM when data changes.
 * All lifecycle hooks are called with their this context pointing to the Vue instance invoking it.
 * Don’t use arrow functions on an options property or callback
 * interpreted as plain HTML - data bindings are ignored. _Note that_ you cannot use v-html to compose template partials, because Vue is not a string-based templating engine. Instead, components are preferred as the fundamental unit for UI reuse and composition.
