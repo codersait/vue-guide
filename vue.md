@@ -1,4 +1,4 @@
-- Vue instance:
+- Vue instance:\n
   `var vm = new Vue({ // options })`
 
 * just know that all Vue components are also Vue instances, and so accept the same options object (except for a few root-specific options).
