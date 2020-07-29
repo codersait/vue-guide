@@ -1,5 +1,5 @@
-- Vue instance:\n
-  `var vm = new Vue({ // options })`
+- Vue instance:
+  `var vm = new Vue({ // options })` vm: view model
 
 * just know that all Vue components are also Vue instances, and so accept the same options object (except for a few root-specific options).
 * When this data changes, the view will re-render. It should be noted that properties in data are only reactive if they existed when the instance was created.
