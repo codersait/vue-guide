@@ -10,7 +10,7 @@
   - update the DOM when data changes.
 * All lifecycle hooks are called with their this context pointing to the Vue instance invoking it.
 * Don’t use arrow functions on an options property or callback
-* interpreted as plain HTML - data bindings are ignored. _Note that_ you cannot use v-html to compose template partials, because Vue is not a string-based templating engine. Instead, components are preferred as the fundamental unit for UI reuse and composition.
+* interpreted as plain HTML - data bindings are ignored. **Note that** you cannot use v-html to compose template partials, because Vue is not a string-based templating engine. Instead, components are preferred as the fundamental unit for UI reuse and composition.
 * Directives are special attributes with the v- prefix. Directive attribute values are expected to be _a single JavaScript expression_ (with the exception of v-for)
 * Some directives can take _an “argument”_, denoted by a colon`:` after the directive name.For example: `v-bind:href` and `v-on:click`
 * `Dynamic Arguments:` it is also possible to use a JavaScript expression in a directive argument by wrapping it with square brackets: For example `<a v-bind:[attributeName]="url"> ... </a>` and `<a v-on:[eventName]="doSomething"> ... </a>`
