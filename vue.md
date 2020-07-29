@@ -15,3 +15,6 @@
 - Directives are special attributes with the v- prefix. Directive attribute values are expected to be **a single JavaScript expression** (with the exception of v-for)
 - Some directives can take **an “argument”**, denoted by a colon`:` after the directive name.For example: `v-bind:href` and `v-on:click`
 - **Dynamic Arguments**: it is also possible to use a JavaScript expression in a directive argument by wrapping it with square brackets: For example `<a v-bind:[attributeName]="url"> ... </a>` and `<a v-on:[eventName]="doSomething"> ... </a>`
+
+* Computed properties are by **default** `getter-only`, but you can also provide a `setter` when you need it.
+* **Watchers**: Vue provides a more generic way to react to data changes through the `watch` option. This is most useful when you want to perform **asynchronous** or **expensive operations** in response to changing data.
